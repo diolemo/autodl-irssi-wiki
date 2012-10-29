@@ -1,0 +1,1 @@
+Welcome to the autodl-irssi wiki!
