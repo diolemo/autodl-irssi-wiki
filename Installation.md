@@ -90,7 +90,7 @@ Installing autodl-irssi. Note: Make sure you're **not** root when you execute th
 
 	mkdir -p ~/.irssi/scripts/autorun
 	cd ~/.irssi/scripts
-	wget -O autodl-irssi.zip https://github.com/downloads/autodl-irssi-community/autodl-irssi/autodl-setup
+	wget -O autodl-irssi.zip https://autodl-irssi-community.googlecode.com/files/autodl-irssi-community-v1.34.zip
 	unzip -o autodl-irssi.zip
 	rm autodl-irssi.zip
 	cp autodl-irssi.pl autorun/
