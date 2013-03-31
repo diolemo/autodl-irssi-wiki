@@ -20,7 +20,8 @@ To use the autodl-irssi ruTorrent plugin, click its icon at the top of ruTorrent
 
 
 If you don't use the ruTorrent plugin, then you may want to send all autodl-irssi output to its own window:
-By default, all autodl-irssi output goes to the **(status)** window. If there's a window called **autodl**, then it will write all output to that window. Use these Irssi commands to create a new window named **autodl** and place it right after the status window (i.e., window position 2):
+By default, all autodl-irssi output goes to the **(status)** window. If there's a window called **autodl**, then it will write all output to that window. Use these Irssi commands to create a new window named **autodl** and place it right after the status window (i.e., window position 2)
+
 	First start Irssi! :D
 	/window new hidden
 	/window name autodl
