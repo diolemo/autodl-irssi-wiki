@@ -120,9 +120,10 @@ Edit conf.php with a text editor and add your port number and password. The port
 
 
 Open ~/.autodl/autodl2.cfg with a text editor and add this to the file:
-	[options]
-	gui-server-port = 12345
-	gui-server-password = secretpass
-
+```
+[options]
+gui-server-port = 12345
+gui-server-password = secretpass
+```
 
 If you start more than one Irssi process, make sure each Irssi process uses a unique port number! It won't work if they all use the same port number.
