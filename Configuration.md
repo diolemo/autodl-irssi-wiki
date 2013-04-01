@@ -122,213 +122,213 @@ The comma separated list type supports wildcards, where the ***** character mean
 ### The filter header
 Create one [filter] header per filter. You can optionally name the filter like **[filter MY FILTER NAME]**. All filter options are optional! If you don't use any filter options, then everything will be downloaded because your filter doesn't filter out anything.
 
-**Name:** enabled
-**Type:** Boolean
-**Default:** true
-**Example:** enabled = false
+**Name:** enabled  
+**Type:** Boolean  
+**Default:** true  
+**Example:** enabled = false  
 **Description:** Use it to disable a filter. All filters are enabled by default.
 
-**Name:** match-releases
-**Type:** Comma separated list
-**Example:** match-releases = The?Simpsons*, American?Dad*
+**Name:** match-releases  
+**Type:** Comma separated list  
+**Example:** match-releases = The?Simpsons*, American?Dad*  
 **Description:** It's compared against the torrent name, eg. **Some.release.720p.HDTV-GROUP**. If the filter should only match TV-shows or movies, it's easier to use the **shows** filter option since it doesn't require wildcards.
 
-**Name:** except-releases
+**Name:** except-releases  
 **Description:** The exact opposite of **match-releases**. If a release matches this option, then it's NOT downloaded.
 
-**Name:** match-categories
-**Type:** Comma separated list
-**Example:** match-categories = *MP3*, TV/XVID
+**Name:** match-categories  
+**Type:** Comma separated list  
+**Example:** match-categories = *MP3*, TV/XVID  
 **Description:** It's compared against the torrent category.
 
-**Name:** except-categories
+**Name:** except-categories  
 **Description:** The exact opposite of **except-categories**. If a release matches this option, then it's NOT downloaded.
 
-**Name:** match-sites
-**Type:** Comma separated list
-**Example:** match-sites = tracker1, tracker2, tracker3
+**Name:** match-sites  
+**Type:** Comma separated list  
+**Example:** match-sites = tracker1, tracker2, tracker3  
 **Description:** It's compared against the tracker. Use the full tracker name, eg. MyTracker or use one of the tracker types found in ~/.irssi/scripts/AutodlIrssi/trackers/*.tracker. Open one of the files and locate the **type="XYZ"** line. Use the value inside the quotes, eg. **XYZ**.
 
-**Name:** except-sites
+**Name:** except-sites  
 **Description:** The exact opposite of **match-sites**. If a release matches this option, then it's NOT downloaded.
 
-**Name:** min-size
-**Type:** Size
-**Example:** min-size = 200MB
-**Default:** 0
+**Name:** min-size  
+**Type:** Size  
+**Example:** min-size = 200MB  
+**Default:** 0  
 **Description:** Used to filter out too small torrents.
 
-**Name:** max-size
-**Type:** Size
-**Example:** max-size = 2.5GB
-**Default:** any size is allowed
+**Name:** max-size  
+**Type:** Size  
+**Example:** max-size = 2.5GB  
+**Default:** any size is allowed  
 **Description:** Used to filter out too big torrents. I recommend everyone to always use this option so you don't accidentally download a 100GB torrent! :D Set it to a reasonable value, eg. for TV-shows, set it to about twice the size of a normal episode (just in case it's a double-episode). This will automatically filter out season packs!
 
-**Name:** shows
-**Type:** Comma separated list
-**Example:** shows = The Simpsons, American Dad
+**Name:** shows  
+**Type:** Comma separated list  
+**Example:** shows = The Simpsons, American Dad  
 **Description:** This is for TV-shows, movies and artists/groups (what.cd/waffles only). autodl-irssi will automatically extract the TV-show/movie name from a scene release name. Example, The.Simpsons.S35E24.720p.HDTV-BLAH will match a **shows** option set to **the simpsons**. You don't need wildcards at all, though it's possible to use wildcards. It's recommended to use **shows** instead of **match-releases** if all you want is for the filter to match TV-shows or movies. what.cd and waffles: this will match against the artist/group.
 
-**Name:** seasons
-**Type:** List of numbers
-**Example:** seasons = 1, 3, 5-10
+**Name:** seasons  
+**Type:** List of numbers  
+**Example:** seasons = 1, 3, 5-10  
 **Description:** This is for TV-shows only. Unless the release matches one of the seasons, it's not downloaded.
 
-**Name:** episodes
-**Type:** List of numbers
-**Example:** episodes = 1, 3, 5-10
+**Name:** episodes  
+**Type:** List of numbers  
+**Example:** episodes = 1, 3, 5-10  
 **Description:** This is for TV-shows only. Unless the release matches one of the episodes, it's not downloaded.
 
-**Name:** resolutions
-**Type:** Comma separated list
-**Example:** resolutions = SD, 720p, 1080p
+**Name:** resolutions  
+**Type:** Comma separated list  
+**Example:** resolutions = SD, 720p, 1080p  
 **Description:** This is for TV-shows and movies only. Unless the release matches one of the resolutions, it's not downloaded. Valid resolutions are one or more of the following: **SD**, **480i**, **480p**, **576p**, **720p**, **810p**, **1080i**, **1080p**.
 
-**Name:** sources
-**Type:** Comma separated list
-**Example:** sources = HDTV, DVDRip, BluRay
+**Name:** sources  
+**Type:** Comma separated list  
+**Example:** sources = HDTV, DVDRip, BluRay  
 **Description:** This is for TV-shows and movies only. Unless the release matches one of the sources, it's not downloaded. Valid sources are one or more of the following: **DSR**, **PDTV**, **HDTV**, **HR.PDTV**, **HR.HDTV**, **DVDRip**, **DVDScr**, **BDr**, **BD5**, **BD9**, **BDRip**, **BRRip**, **DVDR**, **MDVDR**, **HDDVD**, **HDDVDRip**, **BluRay**, **WEB-DL**, **TVRip**, **CAM**, **R5**, **TELESYNC**, **TS**, **TELECINE**, **TC**. **TELESYNC** and **TS** are synonyms (you don't need both). Same for **TELECINE** and **TC**.
 
-**Name:** encoders
-**Type:** Comma separated list
-**Example:** encoders = x264, xvid
+**Name:** encoders  
+**Type:** Comma separated list  
+**Example:** encoders = x264, xvid  
 **Description:** If you don't want windows WMV files, this option could be useful. :) Valid encoders are: **XviD**, **DivX**, **x264**, **h.264** (or **h264**), **mpeg2** (or **mpeg-2**), **VC-1** (or **VC1**), **WMV**.
 
-**Name:** years
-**Type:** List of numbers
-**Example:** years = 1999, 2005-2010
+**Name:** years  
+**Type:** List of numbers  
+**Example:** years = 1999, 2005-2010  
 **Description:** Not all releases have a year in the torrent name, but if it does, you can use it to filter out too old or too new releases.
 
-**Name:** albums
-**Type:** Comma separated list
-**Example:** albums = Some album, Some other album, yet another one
+**Name:** albums  
+**Type:** Comma separated list  
+**Example:** albums = Some album, Some other album, yet another one  
 **Description:** what.cd/waffles only.
 
-**Name:** formats
-**Type:** Comma separated list
-**Example:** formats = MP3, FLAC
+**Name:** formats  
+**Type:** Comma separated list  
+**Example:** formats = MP3, FLAC  
 **Description:** what.cd/waffles only. List the formats you want. Valid formats are: **MP3**, **FLAC**, **Ogg**, **AAC**, **AC3**, **DTS**.
 
-**Name:** bitrates
-**Type:** Comma separated list
-**Example:** bitrates = 192, V0 (vbr), lossless
+**Name:** bitrates  
+**Type:** Comma separated list  
+**Example:** bitrates = 192, V0 (vbr), lossless  
 **Description:** what.cd/waffles only. List the bitrates you want. Some example values: **192**, **320**, **APS (VBR)**, **V2 (VBR)**, **V1 (VBR)**, **APX (VBR)**, **V0 (VBR)**, **q8.x (VBR)**, **Lossless**, **24bit Lossless**, **Other**.
 
-**Name:** media
-**Type:** Comma separated list
-**Example:** media = CD, WEB
+**Name:** media  
+**Type:** Comma separated list  
+**Example:** media = CD, WEB  
 **Description:** what.cd/waffles only. List the media you want. Valid media are: **CD**, **DVD**, **Vinyl**, **Soundboard**, **SACD**, **DAT**, **Cassette**, **WEB**, **Other**.
 
-**Name:** tags
-**Type:** Comma separated list
-**Example:** tags = hip hop, rock
+**Name:** tags  
+**Type:** Comma separated list  
+**Example:** tags = hip hop, rock  
 **Description:** what.cd/waffles only. Unless at least one of your tags matches the release's tags, it's not downloaded. See also **except-tags** and **tags-any**.
 
-**Name:** except-tags
-**Type:** Comma separated list
-**Example:** except-tags = hip hop, rock
+**Name:** except-tags  
+**Type:** Comma separated list  
+**Example:** except-tags = hip hop, rock  
 **Description:** what.cd/waffles only. Same as **tags** except if it matches any/all of these, it's not downloaded. See also **tags** and **except-tags-any**.
 
-**Name:** tags-any
-**Type:** Boolean
-**Default:** true
-**Example:** tags-any = false
+**Name:** tags-any  
+**Type:** Boolean  
+**Default:** true  
+**Example:** tags-any = false  
 **Description:** what.cd/waffles only. Decides how to match the **tags** option, ie., if any or all of the tags must match.
 
-**Name:** except-tags-any
-**Type:** Boolean
-**Default:** true
-**Example:** except-tags-any = true
+**Name:** except-tags-any  
+**Type:** Boolean  
+**Default:** true  
+**Example:** except-tags-any = true  
 **Description:** what.cd/waffles only. Decides how to match the **except-tags** option, ie., if any or all of the tags must match.
 
-**Name:** scene
-**Type:** Boolean
-**Example:** scene = true
+**Name:** scene  
+**Type:** Boolean  
+**Example:** scene = true  
 **Description:** what.cd/waffles, and a few others. Some sites mark a release as scene or non-scene. Set it to true if you want only scene releases, false if you only want non-scene releases, or don't use this option if you don't care.
 
-**Name:** log
-**Type:** Boolean
-**Example:** log = true
+**Name:** log  
+**Type:** Boolean  
+**Example:** log = true  
 **Description:** what.cd/waffles. Set it to true if you only want releases with a log file, false if you don't want releases with log files, or don't use this option if you don't care.
 
-**Name:** cue
-**Type:** Boolean
-**Example:** cue = true
+**Name:** cue  
+**Type:** Boolean  
+**Example:** cue = true  
 **Description:** what.cd. Set it to true if you only want releases with a cue file, false if you don't want releases with cue files, or don't use this option if you don't care.
 
-**Name:** match-uploaders
-**Type:** Comma separated list
-**Example:** match-uploaders = uploader1, uploader2
+**Name:** match-uploaders  
+**Type:** Comma separated list  
+**Example:** match-uploaders = uploader1, uploader2  
 **Description:** Use it to only download from certain uploaders.
 
-**Name:** except-uploaders
+**Name:** except-uploaders  
 **Description:** The exact opposite of **match-uploaders**. If a release matches this option, then it's NOT downloaded.
 
-**Name:** max-pretime
-**Type:** time-since string
-**Example:** max-pretime = 2 mins 3 secs
+**Name:** max-pretime  
+**Type:** time-since string  
+**Example:** max-pretime = 2 mins 3 secs  
 **Description:** Some sites announce the pretime of the release. Use this to filter out old releases.
 
-**Name:** max-downloads
-**Type:** Integer
-**Example:** max-downloads = 15
+**Name:** max-downloads  
+**Type:** Integer  
+**Example:** max-downloads = 15  
 **Description:** Download no more than this number of torrents per week/month (see **max-downloads-per**). Remove the filter option or set it to a negative number to disable it.
 
-**Name:** max-downloads-per
-**Type:** String
-**Example:** max-downloads-per = week
+**Name:** max-downloads-per  
+**Type:** String  
+**Example:** max-downloads-per = week  
 **Description:** Valid values are **day**, **week**, and **month**. See **max-downloads**.
 
 ### The options header
 These options change the behavior of autodl-irssi. Place these options below the **[options]** header.
 
-**Name:** rt-address
-**Type:** string
-**Default:** Whatever is found in ~/.rtorrent.rc
-**Example:** rt-address = 127.0.0.1:5000
+**Name:** rt-address  
+**Type:** string  
+**Default:** Whatever is found in ~/.rtorrent.rc  
+**Example:** rt-address = 127.0.0.1:5000  
 **Description:** If you use the 'rtorrent' action (**upload-method**), then you must initialize this to your rtorrent's SCGI address. It can be ip:port (eg. 127.0.0.1:5000) or /path/to/socket. **NOTE:** This option can only be set in autodl2.cfg, **not** autodl.cfg.
 
 
-**Name:** update-check
-**Type:** string
-**Default:** ask
-**Example:** update-check = auto
+**Name:** update-check  
+**Type:** string  
+**Default:** ask  
+**Example:** update-check = auto  
 **Description:** autodl-irssi can auto update itself. Valid values are **ask**, **auto**, and **disabled**. **ask** will print a message when there's a new version. **auto** will automatically update it when there's a new version. **disabled** won't do a thing when there's a new update.
 
-**Name:** max-saved-releases
-**Type:** Integer greater than or equal to 0.
-**Default:** 1000
-**Example:** max-saved-releases = 200
+**Name:** max-saved-releases  
+**Type:** Integer greater than or equal to 0.  
+**Default:** 1000  
+**Example:** max-saved-releases = 200  
 **Description:** autodl-irssi will remember the last **max-saved-releases** releases you have downloaded so it won't re-download the same file again. Only useful if **save-download-history** is enabled.
 
-**Name:** save-download-history
-**Type:** Boolean
-**Default:** true
-**Example:** save-download-history = true
+**Name:** save-download-history  
+**Type:** Boolean  
+**Default:** true  
+**Example:** save-download-history = true  
 **Description:** Set it to false to disable writing the last N (= **max-saved-releases**) downloaded releases to ~/.autodl/DownloadHistory.txt.
 
-**Name:** download-duplicates
-**Type:** Boolean
-**Default:** false
-**Example:** download-duplicates = true
+**Name:** download-duplicates  
+**Type:** Boolean  
+**Default:** false  
+**Example:** download-duplicates = true  
 **Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release again if it's re-announced.
 
-**Name:** unique-torrent-names
-**Type:** Boolean
-**Default:** false
-**Example:** unique-torrent-names = true
+**Name:** unique-torrent-names  
+**Type:** Boolean  
+**Default:** false  
+**Example:** unique-torrent-names = true  
 **Description:** If true, all saved torrent filenames are unique (the site name is prepended to the filename). Set it to false to use the torrent release name as the filename.
 
-**Name:** download-retry-time-seconds
-**Type:** Integer
-**Default:** 300
-**Example:** download-retry-time-seconds = 120
+**Name:** download-retry-time-seconds  
+**Type:** Integer  
+**Default:** 300  
+**Example:** download-retry-time-seconds = 120  
 **Description:** If a download fails, autodl-irssi will try to re-download it after waiting a little while. If it still can't download it after **download-retry-time-seconds** seconds, it will give up and report an error.
 
-**Name:** path-utorrent
-**Type:** String
-**Default:** nothing
-**Example:** path-utorrent = /cygdrive/c/Program Files (x86)/uTorrent/uTorrent.exe
+**Name:** path-utorrent  
+**Type:** String  
+**Default:** nothing  
+**Example:** path-utorrent = /cygdrive/c/Program Files (x86)/uTorrent/uTorrent.exe  
 **Description:** Set it to the path of uTorrent if you're using an **upload-type** equal to **dyndir**.
 
 
@@ -360,14 +360,14 @@ There's a global action option in the [options] header and a local action option
 	#rt-ignore-scheduler = true
 	#rt-dont-add-name = false
 
-**rt-dir** is the destination directory. The torrent data will be saved here. Macros can be used.
-**rt-commands** can be used to execute some rtorrent commands when loading the torrent file. It's for advanced users only.
-**rt-label** is used to set a ruTorrent label.
-**rt-ratio-group** is used to set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.
-**rt-channel** is used to set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.
-**rt-priority** sets the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.
-**rt-ignore-scheduler**: set it to true to disable the ruTorrent scheduler.
-**rt-dont-add-name**: set it to true if you don't want the torrent name to be added to the path.
+**rt-dir** is the destination directory. The torrent data will be saved here. Macros can be used.  
+**rt-commands** can be used to execute some rtorrent commands when loading the torrent file. It's for advanced users only.  
+**rt-label** is used to set a ruTorrent label.  
+**rt-ratio-group** is used to set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.  
+**rt-channel** is used to set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.  
+**rt-priority** sets the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.  
+**rt-ignore-scheduler**: set it to true to disable the ruTorrent scheduler.  
+**rt-dont-add-name**: set it to true if you don't want the torrent name to be added to the path.  
 
 
 **Save torrent to a watch directory:**
@@ -465,24 +465,24 @@ Some common tracker options and how to get them:
 	#passkey =
 	#etc ...
 
-**enabled** is optional and defaults to true. Set it to false to disable the tracker.
-**force-ssl** is optional and can be set to true to force encrypted torrent downloads. Not all trackers support HTTPS downloads. Leave it blank for the default value (which is HTTP or HTTPS).
-**upload-delay-secs** is optional and is the number of seconds autodl-irssi should wait before uploading/saving the torrent. Default is 0 (no wait). This option isn't needed 99.999% of the time.
+**enabled** is optional and defaults to true. Set it to false to disable the tracker.  
+**force-ssl** is optional and can be set to true to force encrypted torrent downloads. Not all trackers support HTTPS downloads. Leave it blank for the default value (which is HTTP or HTTPS).  
+**upload-delay-secs** is optional and is the number of seconds autodl-irssi should wait before uploading/saving the torrent. Default is 0 (no wait). This option isn't needed 99.999% of the time.  
 
 
 
 ### Macros
 
-Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**
-**$(TYear)** is the year of the torrent release, not current year.
-**$(Artist)**, **$(Show)**, **$(Movie)**, **$(Name1)** all mean the same thing.
+Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**  
+**$(TYear)** is the year of the torrent release, not current year.  
+**$(Artist)**, **$(Show)**, **$(Movie)**, **$(Name1)** all mean the same thing.  
 **$(Album)**, **$(Name2)** both mean the same thing.
-**$(Site)** is tracker URL.
-**$(Tracker)** is long tracker name.
-**$(TrackerShort)** is short tracker name.
-**$(TorrentPathName)** is the path to the .torrent file (unix path if you're using cygwin).
-**$(WinTorrentPathName)** is the windows path to the .torrent file.
-**$(InfoHash)** This is the "info hash" of the torrent file.
+**$(Site)** is tracker URL.  
+**$(Tracker)** is long tracker name.  
+**$(TrackerShort)** is short tracker name.  
+**$(TorrentPathName)** is the path to the .torrent file (unix path if you're using cygwin).  
+**$(WinTorrentPathName)** is the windows path to the .torrent file.  
+**$(InfoHash)** This is the "info hash" of the torrent file.  
 
 The rest are possibly self explanatory: **$(Category)**, **$(TorrentName)**, **$(Uploader)**, **$(TorrentSize)**, **$(PreTime)**, **$(TorrentUrl)**, **$(TorrentSslUrl)**, **$(Season)**, **$(Episode)**, **$(Resolution)**, **$(Source)**, **$(Encoder)**, **$(Format)**, **$(Bitrate)**, **$(Media)**, **$(Tags)**, **$(Scene)**, **$(Log)**, **$(Cue)**
 
