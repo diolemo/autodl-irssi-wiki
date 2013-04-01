@@ -380,14 +380,16 @@ Don't forget to initialize webui user, password, etc below the [webui] header!
 
 **Upload torrent to an FTP server:**
 Don't forget to initialize FTP user, password, etc below the [ftp] header!
+```
 upload-type = ftp
 upload-ftp-path = /ftp/server/path
-
+```
 **Execute a program:**
-	upload-type = exec
-	upload-command = /path/to/program
-	upload-args = all arguments here
-
+```
+upload-type = exec
+upload-command = /path/to/program
+upload-args = all arguments here
+```
 Both **upload-command** and **upload-args** support macros. See Macros below for an explanation of all available macros. Just remember to enclose the macro in double quotes if it's possible that the macro contains spaces. Example: **upload-args = --torrent "$(TorrentPathName)" --category $(Category)**
 
 
