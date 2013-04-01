@@ -120,6 +120,7 @@ Edit conf.php with a text editor and add your port number and password. The port
 
 
 Open ~/.autodl/autodl2.cfg with a text editor and add this to the file:
+
 ```
 [options]
 gui-server-port = 12345
