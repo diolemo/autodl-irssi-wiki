@@ -15,6 +15,7 @@ I am assuming a few things here.
 ### Irssi
 
 Considering the name of this project, the first thing we should do is install irssi.  **Please note that these commands should be run as root or prefixed with sudo.**
+
 `aptitude update && aptitude install -y irssi`
 
 ### Dependencies
