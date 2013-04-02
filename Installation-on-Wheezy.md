@@ -37,7 +37,7 @@ Now we can install autodl-irssi-community into irssi, as well as setting it up t
 ````
 mkdir -p ~/.irssi/scripts/autorun
 cd ~/.irssi/scripts
-wget -O autodl-irssi.zip https://autodl-irssi-community.googlecode.com/files/autodl-irssi-community-v1.34.zip
+wget -O autodl-irssi.zip https://autodl-irssi-community.googlecode.com/files/autodl-irssi-community.zip
 unzip -o autodl-irssi.zip
 rm autodl-irssi.zip
 ln -s ../autodl-irssi.pl autorun/
