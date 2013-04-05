@@ -124,6 +124,23 @@ Important: autodl-irssi assumes that the Z: drive is mapped to your / (root) dir
 
 **upload-dyndir** supports macros. See Macros below for an explanation of all available macros. You can use macros to create a directory based on current day and month. Some examples:
 
-**upload-dyndir = c:\mydownloads\$(year)-$(month)-$(day)** will save the torrent data below a directory containing the current year, month and day. Eg. **c:\mydownloads\2010-10-28** if 2010-10-28 happened to be the current day.
+**upload-dyndir** = c:\mydownloads\$(year)-$(month)-$(day)** will save the torrent data below a directory containing the current year, month and day. Eg. **c:\mydownloads\2010-10-28** if 2010-10-28 happened to be the current day.
 
-**upload-dyndir = c:\mydownloads\$(month)$(day)\$(trackershort)\$(category)** will save the data to a directory based on current month, day, tracker name, and torrent category.
+**upload-dyndir** = c:\mydownloads\$(month)$(day)\$(trackershort)\$(category)** will save the data to a directory based on current month, day, tracker name, and torrent category.
+
+### Macros
+
+Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**  
+**$(TYear)** is the year of the torrent release, not current year.  
+**$(Artist)**, **$(Show)**, **$(Movie)**, **$(Name1)** all mean the same thing.  
+**$(Album)**, **$(Name2)** both mean the same thing.  
+**$(Site)** is tracker URL.  
+**$(Tracker)** is long tracker name.  
+**$(TrackerShort)** is short tracker name.  
+**$(TorrentPathName)** is the path to the .torrent file (unix path if you're using cygwin).  
+**$(WinTorrentPathName)** is the windows path to the .torrent file.  
+**$(InfoHash)** This is the "info hash" of the torrent file.
+
+The rest are possibly self explanatory: **$(Category)**, **$(TorrentName)**, **$(Uploader)**, **$(TorrentSize)**, **$(PreTime)**, **$(TorrentUrl)**, **$(TorrentSslUrl)**, **$(Season)**, **$(Episode)**, **$(Resolution)**, **$(Source)**, **$(Encoder)**, **$(Format)**, **$(Bitrate)**, **$(Media)**, **$(Tags)**, **$(Scene)**, **$(Log)**, **$(Cue)**
+
+**$(Season2)** and **$(Episode2)** are two-digit season and episode numbers.
