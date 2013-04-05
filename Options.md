@@ -69,15 +69,17 @@ autodl-irssi can save a torrent file to a watch directory, upload it to uTorrent
 There's a global action option in the [options] header and a local action option in each filter. By default, the global action option is used but you can override it in any filter by placing a new **upload-type** below your [filter] header.
 
 **rtorrent only:**
-	upload-type = rtorrent
-	rt-dir = /home/YOURNAME/downloads/$(Month)$(Day)/$(Tracker)
-	rt-commands = print="Added: $(TorrentName)"; print="Hello, world!"
-	rt-label = $(Tracker)
-	#rt-ratio-group = rat_3
-	#rt-channel = thr_2
-	rt-priority = high
-	#rt-ignore-scheduler = true
-	#rt-dont-add-name = false
+```
+upload-type = rtorrent
+rt-dir = /home/YOURNAME/downloads/$(Month)$(Day)/$(Tracker)
+rt-commands = print="Added: $(TorrentName)"; print="Hello, world!"
+rt-label = $(Tracker)
+#rt-ratio-group = rat_3
+#rt-channel = thr_2
+rt-priority = high
+#rt-ignore-scheduler = true
+#rt-dont-add-name = false
+```
 
 **rt-dir** is the destination directory. The torrent data will be saved here. Macros can be used.  
 **rt-commands** can be used to execute some rtorrent commands when loading the torrent file. It's for advanced users only.  
