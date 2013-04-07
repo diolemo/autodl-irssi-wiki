@@ -1,3 +1,8 @@
+## Note
+**We highly recommend that you perform a clean install when switching from the official release of autodl-irssi to prevent any possible conflicts. Running ``rm -r ~/.irssi/scripts/AutodlIrssi`` in your terminal or deleting that directory through an FTP client is suggested.**
+
+## Automatic Installation
+
 The install script will install autodl-irssi and optionally also ruTorrent, the ruTorrent plugin and any other dependencies required to have a fully working ruTorrent install. It will ask a few questions and then install whatever you selected.
 
 ### Ubuntu and Ubuntu clones
@@ -45,8 +50,6 @@ exec
 dyndir (requires uTorrent)
 
 It's a comma seperated list, eg.: allowed = watchdir, ftp
-
-
 
 ## Manual installation
 
