@@ -8,7 +8,7 @@ The install script will install autodl-irssi and optionally also ruTorrent, the 
 ### Ubuntu and Ubuntu clones
 
 	cd
-	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-irssi-community/autodl-irssi/autodl-setup
+	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-community/autodl-irssi/autodl-setup
 	sudo sh autodl-setup
 
 ### Any other OS
@@ -16,7 +16,7 @@ Log in as root:
 	su -
 Then install it:
 
-	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-irssi-community/autodl-irssi/autodl-setup
+	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-community/autodl-irssi/autodl-setup
 	sh autodl-setup
 
 
@@ -93,7 +93,7 @@ Installing autodl-irssi. Note: Make sure you're **not** root when you execute th
 
 	mkdir -p ~/.irssi/scripts/autorun
 	cd ~/.irssi/scripts
-	wget -O autodl-irssi.zip https://autodl-irssi-community.googlecode.com/files/autodl-irssi-community-v1.34.zip
+	wget -O autodl-irssi.zip https://autodl-irssi-community.googlecode.com/files/autodl-irssi-community.zip
 	unzip -o autodl-irssi.zip
 	rm autodl-irssi.zip
 	cp autodl-irssi.pl autorun/
