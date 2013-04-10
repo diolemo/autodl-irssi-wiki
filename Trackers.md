@@ -13,7 +13,6 @@ autodl-irssi-community supports the following trackers:
 * BrokenStones
 * BTN
 * ChronicTracker
-* DeLLuge
 * Digital-Hive
 * Empornium
 * ExtremeBits
@@ -26,7 +25,6 @@ autodl-irssi-community supports the following trackers:
 * GFTracker
 * Gks
 * goem
-* HDBits.org
 * HDME.eu
 * HD-Torrents
 * hey.fux0r.eu
