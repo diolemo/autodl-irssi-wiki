@@ -32,7 +32,7 @@ These options change the behavior of autodl-irssi. Place these options below the
 **Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release again if it's re-announced.
 
 **unique-torrent-names**
-**Type:** Boolean  
+> **Type:** Boolean  
 **Default:** false  
 **Example:** unique-torrent-names = true  
 **Description:** If true, all saved torrent filenames are unique (the site name is prepended to the filename). Set it to false to use the torrent release name as the filename.
