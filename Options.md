@@ -1,51 +1,50 @@
-### The options header
 These options change the behavior of autodl-irssi. Place these options below the **[options]** header.
 
-**Name:** rt-address  
-**Type:** string  
+**rt-address**
+> **Type:** string  
 **Default:** Whatever is found in ~/.rtorrent.rc  
 **Example:** rt-address = 127.0.0.1:5000  
 **Description:** If you use the 'rtorrent' action (**upload-method**), then you must initialize this to your rtorrent's SCGI address. It can be ip:port (eg. 127.0.0.1:5000) or /path/to/socket. **NOTE:** This option can only be set in autodl2.cfg, **not** autodl.cfg.
 
 
-**Name:** update-check  
-**Type:** string  
+**update-check**
+> **Type:** string  
 **Default:** ask  
 **Example:** update-check = auto  
 **Description:** autodl-irssi can auto update itself. Valid values are **ask**, **auto**, and **disabled**. **ask** will print a message when there's a new version. **auto** will automatically update it when there's a new version. **disabled** won't do a thing when there's a new update.
 
-**Name:** max-saved-releases  
-**Type:** Integer greater than or equal to 0.  
+**max-saved-releases**
+> **Type:** Integer greater than or equal to 0.  
 **Default:** 1000  
 **Example:** max-saved-releases = 200  
 **Description:** autodl-irssi will remember the last **max-saved-releases** releases you have downloaded so it won't re-download the same file again. Only useful if **save-download-history** is enabled.
 
-**Name:** save-download-history  
-**Type:** Boolean  
+**save-download-history**
+> **Type:** Boolean  
 **Default:** true  
 **Example:** save-download-history = true  
 **Description:** Set it to false to disable writing the last N (= **max-saved-releases**) downloaded releases to ~/.autodl/DownloadHistory.txt.
 
-**Name:** download-duplicates  
-**Type:** Boolean  
+**download-duplicates**
+> **Type:** Boolean  
 **Default:** false  
 **Example:** download-duplicates = true  
 **Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release again if it's re-announced.
 
-**Name:** unique-torrent-names  
+**unique-torrent-names**
 **Type:** Boolean  
 **Default:** false  
 **Example:** unique-torrent-names = true  
 **Description:** If true, all saved torrent filenames are unique (the site name is prepended to the filename). Set it to false to use the torrent release name as the filename.
 
-**Name:** download-retry-time-seconds  
-**Type:** Integer  
+**download-retry-time-seconds**
+> **Type:** Integer  
 **Default:** 300  
 **Example:** download-retry-time-seconds = 120  
 **Description:** If a download fails, autodl-irssi will try to re-download it after waiting a little while. If it still can't download it after **download-retry-time-seconds** seconds, it will give up and report an error.
 
-**Name:** path-utorrent  
-**Type:** String  
+**path-utorrent**
+> **Type:** String  
 **Default:** nothing  
 **Example:** path-utorrent = /cygdrive/c/Program Files (x86)/uTorrent/uTorrent.exe  
 **Description:** Set it to the path of uTorrent if you're using an **upload-type** equal to **dyndir**.
