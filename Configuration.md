@@ -3,7 +3,7 @@ All filters and options are read from ~/.autodl/autodl.cfg. The file will be aut
 ## Formatting
 All lines starting with the # character are ignored as comments. You may use this to disable options.
 
-The file is made up of headers in the form of ``[headername]`` with the options for that header immediately below. The options are in the form of ``[option-name] = value``. All value options are case-insensitive.
+The file is made up of headers in the form of ``[headername]`` with the options for that header immediately below. The options are in the form of ``option-name = value``. All value options are case-insensitive.
 
 There are different option types:
 * Comma separated lists (value1, value2, value3)
