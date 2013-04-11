@@ -48,12 +48,12 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Description:** This is for TV-shows, movies and artists/groups (what.cd/waffles only). autodl-irssi will automatically extract the TV-show/movie name from a scene release name. Example, The.Simpsons.S35E24.720p.HDTV-BLAH will match a **shows** option set to **the simpsons**. You don't need wildcards at all, though it's possible to use wildcards. It's recommended to use **shows** instead of **match-releases** if all you want is for the filter to match TV-shows or movies. what.cd and waffles: this will match against the artist/group.
 
 **seasons**
-> **Type:** List of numbers  
+> **Type:** Number list  
 **Example:** seasons = 1, 3, 5-10  
 **Description:** This is for TV-shows only. Unless the release matches one of the seasons, it's not downloaded.
 
 **episodes**
-> **Type:** List of numbers  
+> **Type:** Number list  
 **Example:** episodes = 1, 3, 5-10  
 **Description:** This is for TV-shows only. Unless the release matches one of the episodes, it's not downloaded.
 
@@ -73,7 +73,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Description:** If you don't want windows WMV files, this option could be useful. :) Valid encoders are: **XviD**, **DivX**, **x264**, **h.264** (or **h264**), **mpeg2** (or **mpeg-2**), **VC-1** (or **VC1**), **WMV**, **Remux** (or **h.264 Remux**, **h264 Remux**, **VC-1 Remux**, **VC1 Remux**).
 
 **years**
-> **Type:** List of numbers  
+> **Type:** Number list  
 **Example:** years = 1999, 2005-2010  
 **Description:** Not all releases have a year in the torrent name, but if it does, you can use it to filter out too old or too new releases.
 
@@ -148,7 +148,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **freeleech-percents**
 > **Type:** Number list  
 **Example:** freeleech-percents = 50,75  
-**Description:** Some trackers have multiple levels of freeleech. Set a list of numbers representing the percentages (without the % sign) of the releases you want to download.
+**Description:** Some trackers have multiple levels of freeleech. Set a Number list representing the percentages (without the % sign) of the releases you want to download.
 
 **match-uploaders**
 > **Type:** Comma separated list  
