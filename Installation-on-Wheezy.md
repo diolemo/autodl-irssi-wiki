@@ -86,4 +86,4 @@ _Note: You need quotation marks in the php file, but not the cfg file for passwo
 At this point you should be able to start irssi, and the plugin should be functional in your rutorrent instance.
 
 ### Configuration
-For advanced configuration please refer to [this page](https://github.com/autodl-community/autodl-irssi/wiki/Configuration)
+For advanced configuration please refer to [this page](Configuration)
