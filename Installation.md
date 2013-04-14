@@ -1,14 +1,14 @@
-## Note
-**We highly recommend that you perform a clean install when switching from the official release of autodl-irssi to prevent any possible conflicts. Running ``rm -r ~/.irssi/scripts/AutodlIrssi`` in your terminal or deleting that directory through an FTP client is suggested.**
+We highly recommend that you perform a clean install when switching from the official release of autodl-irssi to prevent any possible conflicts. Running ``rm -r ~/.irssi/scripts/AutodlIrssi`` in your terminal or deleting that directory through an FTP client is suggested.
 
 ## Automatic Installation
+**Note: This is just the original author's setup script with the autodl-irssi url changed to our fork. It does not work on some newer distros. It does not yet include our fork of the [ruTorrent plugin](https://github.com/autodl-community/autodl-rutorrent). We suggest manual installation at this time.**
 
 The install script will install autodl-irssi and optionally also ruTorrent, the ruTorrent plugin and any other dependencies required to have a fully working ruTorrent install. It will ask a few questions and then install whatever you selected.
 
 ### Ubuntu and Ubuntu clones
 
 	cd
-	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-community/autodl-irssi/autodl-setup
+	wget --no-check-certificate -O autodl-setup https://autodl-irssi-community.googlecode.com/files/autodl-setup
 	sudo sh autodl-setup
 
 ### Any other OS
@@ -16,7 +16,7 @@ Log in as root:
 	su -
 Then install it:
 
-	wget --no-check-certificate -O autodl-setup https://github.com/downloads/autodl-community/autodl-irssi/autodl-setup
+	wget --no-check-certificate -O autodl-setup https://autodl-irssi-community.googlecode.com/files/autodl-setup
 	sh autodl-setup
 
 
