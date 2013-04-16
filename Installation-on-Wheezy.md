@@ -55,7 +55,7 @@ Assuming you installed rutorrent under /var/www/rutorrent, you can do the follow
 
 ````
 cd /var/www/rutorrent/plugins
-svn co https://autodl-irssi.svn.sourceforge.net/svnroot/autodl-irssi/trunk/rutorrent/autodl-irssi
+git clone https://github.com/autodl-irssi-community/autodl-rutorrent.git autodl-irssi
 cp autodl-irssi/_conf.php autodl-irssi/conf.php
 chown -R www-data:www-data autodl-irssi
 ````
