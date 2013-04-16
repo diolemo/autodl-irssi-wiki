@@ -107,7 +107,7 @@ The autodl-irssi startup script has been copied to the autorun directory so it w
 Installing the optional ruTorrent plugin. You may need to slightly modify the steps if you're not using Ubuntu or if ruTorrent isn't installed to /var/www/rutorrent/
 
 	cd /var/www/rutorrent/plugins
-	sudo svn co https://autodl-irssi.svn.sourceforge.net/svnroot/autodl-irssi/trunk/rutorrent/autodl-irssi
+	sudo git clone https://github.com/autodl-irssi-community/autodl-rutorrent.git autodl-irssi
 	sudo cp autodl-irssi/_conf.php autodl-irssi/conf.php
 	sudo chown -R www-data:www-data autodl-irssi
 
