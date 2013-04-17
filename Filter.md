@@ -133,7 +133,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 > **Type:** Number list  
 **Default:** Any score allowed  
 **Example:** log-scores = 90-95,96,98,100  
-**Description:** what.cd/waffles. Set the log scores of the releases you want to match.
+**Description:** Set the log scores of the releases you want to match.
 
 **cue**
 > **Type:** Boolean  
