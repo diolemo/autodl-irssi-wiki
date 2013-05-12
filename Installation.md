@@ -1,7 +1,7 @@
 We highly recommend that you perform a clean install when switching from the official release of autodl-irssi to prevent any possible conflicts. Running ``rm -r ~/.irssi/scripts/AutodlIrssi`` in your terminal or deleting that directory through an FTP client is suggested.
 
 ## Automatic Installation
-**Note: This is just the original author's setup script with the autodl-irssi url changed to our fork. It does not work on some newer distros. It does not yet include our fork of the [ruTorrent plugin](https://github.com/autodl-community/autodl-rutorrent). We suggest manual installation at this time.**
+**Note: This is just the original setup script with the autodl-irssi and ruTorrent plugin urls changed to our forks. Some manual operations may be required on some newer distros.**
 
 The install script will install autodl-irssi and optionally also ruTorrent, the ruTorrent plugin and any other dependencies required to have a fully working ruTorrent install. It will ask a few questions and then install whatever you selected.
 
