@@ -1,7 +1,12 @@
-### The FTP header
-	[ftp]
-	user =
-	password =
-	hostname =
-	port =
-user is user name, password is your password, hostname is the hostname/IP-address, and port is the FTP port.
+```
+[ftp]
+user =
+password =
+hostname =
+port =
+```
+
+**user:** Your FTP user name.
+**password:** Your FTP password.
+**hostname:** The hostname/IP-address of your FTP server.
+**port:** The port of your FTP server.
