@@ -8,7 +8,7 @@ invite-http-header =
 invite-http-data = 
 ```
 
-Create one **[channel]** header per server.
+Create a separate **[channel]** header for each channel on each server.
 
 **name:** The name of the channel to join.  
 **password:** The channel password. This is usually not needed.  
