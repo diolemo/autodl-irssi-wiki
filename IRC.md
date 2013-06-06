@@ -1,6 +1,6 @@
 ```
 [irc]
-auto-connect = true
+auto-connect =
 user-name =
 real-name =
 output-server =
