@@ -173,7 +173,8 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Example:** max-downloads-per = week  
 **Description:** Valid values are **day**, **week**, and **month**. See **max-downloads**.
 
-**uploadDelaySecs**
-> **Type:** time-since string
-**Example:** uploadDelaySecs = 10
-**Description:** Allows to set upload delay per filter.  
+**upload-delay-secs**
+> **Type:** Integer  
+**Default:** 0 (no wait)  
+**Example:** upload-delay-secs = 10  
+**Description:** The number of seconds autodl-irssi should wait before uploading/saving the torrent.
