@@ -172,3 +172,8 @@ Create one [filter] header per filter. You can optionally name the filter like *
 > **Type:** String  
 **Example:** max-downloads-per = week  
 **Description:** Valid values are **day**, **week**, and **month**. See **max-downloads**.
+
+**uploadDelaySecs**
+> **Type:** time-since string
+**Example:** uploadDelaySecs = 10
+**Description:** Allows to set upload delay per filter.  
