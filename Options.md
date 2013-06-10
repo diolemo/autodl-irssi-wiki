@@ -29,7 +29,7 @@ These options change the behavior of autodl-irssi. Place these options below the
 > **Type:** Boolean  
 **Default:** false  
 **Example:** download-duplicates = true  
-**Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release again if it's re-announced.
+**Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release if it's re-announced or announced by multiple trackers.
 
 **unique-torrent-names**
 > **Type:** Boolean  
