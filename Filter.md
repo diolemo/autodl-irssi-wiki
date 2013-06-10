@@ -178,3 +178,9 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Default:** 0 (no wait)  
 **Example:** upload-delay-secs = 10  
 **Description:** The number of seconds autodl-irssi should wait before uploading/saving the torrent.
+
+**download-duplicates**
+> **Type:** Boolean  
+**Default:** false  
+**Example:** download-duplicates = true  
+**Description:** By default, it's false so no duplicate releases are downloaded. Set it to true if you want to download the same release if it's re-announced or announced by multiple trackers.
