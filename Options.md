@@ -41,7 +41,7 @@ These options change the behavior of autodl-irssi. Place these options below the
 > **Type:** Integer  
 **Default:** 300  
 **Example:** download-retry-time-seconds = 120  
-**Description:** If a download fails, autodl-irssi will try to re-download it after waiting a little while. If it still can't download it after **download-retry-time-seconds** seconds, it will give up and report an error.
+**Description:** If a download fails, autodl-irssi will try to re-download it every 3 seconds for  **download-retry-time-seconds** seconds. It will give up after **download-retry-time-seconds** and report an error.
 
 **path-utorrent**
 > **Type:** String  
