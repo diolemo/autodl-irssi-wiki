@@ -1,3 +1,4 @@
+[[Home]]  
 [[Installation]]  
 [[Configuration]]  
 [[Trackers]]  
