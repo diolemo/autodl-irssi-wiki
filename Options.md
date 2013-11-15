@@ -50,24 +50,12 @@ These options change the behavior of autodl-irssi. Place these options below the
 **Description:** Set it to the path of uTorrent if you're using an **upload-type** equal to **dyndir**.
 
 
-### Sending Wake on LAN (WOL)
-It's possible to wake up the computer before uploading the torrent (uTorrent webui or FTP upload). You may need to make sure your BIOS and network card have WOL enabled.
-
-wol-mac-address = 00:11:22:33:44:55
-wol-ip-address = 12.34.56.78  (or a DNS name, eg. www.blah.com)
-wol-port = 9 (defaults to 9 if you leave it blank)
-
-**wol-mac-address** is the MAC (or hardware) address of the computer's network card. Use ifconfig /all (windows) or ifconfig -a (Linux) to find out your network card's MAC address.
-
-If you have a router, then set **wol-ip-address** to your router's public IP address, and make sure the router forwards UDP packets to port **wol-port** (default 9) to your router's internal broadcast address (usually 192.168.0.255).
-
-
-### Torrent action options
+## Torrent action options
 autodl-irssi can save a torrent file to a watch directory, upload it to uTorrent webui, upload it to an FTP server, execute a program or use uTorrent to save it to a dynamic directory name that depends on the current torrent.
 
-There's a global action option in the [options] header and a local action option in each filter. By default, the global action option is used but you can override it in any filter by placing a new **upload-type** below your [filter] header.
+By default, the global action set in your **[options]** header is used, but you can override it in any filter by placing a new **upload-type** in the **[filter]** header.
 
-**rtorrent only:**
+### rTorrent
 ```
 upload-type = rtorrent
 rt-dir = /home/YOURNAME/downloads/$(Month)$(Day)/$(Tracker)
@@ -80,44 +68,53 @@ rt-priority = high
 #rt-dont-add-name = false
 ```
 
-**rt-dir** is the destination directory. The torrent data will be saved here. Macros can be used.  
-**rt-commands** can be used to execute some rtorrent commands when loading the torrent file. It's for advanced users only.  
-**rt-label** is used to set a ruTorrent label.  
-**rt-ratio-group** is used to set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.  
-**rt-channel** is used to set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.  
-**rt-priority** sets the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.  
-**rt-ignore-scheduler**: set it to true to disable the ruTorrent scheduler.  
-**rt-dont-add-name**: set it to true if you don't want the torrent name to be added to the path.  
+**rt-dir:** The destination directory. The torrent data will be saved here. Supports [macros](Options#Macros).  
+**rt-commands:**Execute the given rTorrent commands when loading the torrent file.  
+**rt-label:**Set a ruTorrent label.  
+**rt-ratio-group:** Set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.  
+**rt-channel:** Set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.  
+**rt-priority:** Set the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.  
+**rt-ignore-scheduler:** Set it to true to disable the ruTorrent scheduler.  
+**rt-dont-add-name:** Set it to true if you don't want the torrent name to be added to the path.  
 
 
-**Save torrent to a watch directory:**
-	upload-type = watchdir
-	upload-watch-dir = /home/myusername/mywatchdir
+### Watch Directory
+```
+upload-type = watchdir
+upload-watch-dir = /home/myusername/mywatchdir
+```
 
-**Upload torrent to uTorrent webui:**
-Don't forget to initialize webui user, password, etc below the [webui] header!
-	upload-type = webui
+**upload-watch-dir:** Your torrent client's watch directory. Supports [macros](Options#Macros).
 
-**Upload torrent to an FTP server:**
-Don't forget to initialize FTP user, password, etc below the [ftp] header!
+### uTorrent WebUI
+Set webui user, password, etc below the **[webui]** header!
+```
+upload-type = webui
+```
+
+### FTP
+Set FTP user, password, etc in the **[ftp]** header!
 ```
 upload-type = ftp
-upload-ftp-path = /ftp/server/path
+upload-ftp-path = /path/to/directory
 ```
-**Execute a program:**
+
+### Execute a command
 ```
 upload-type = exec
 upload-command = /path/to/program
 upload-args = all arguments here
 ```
-Both **upload-command** and **upload-args** support macros. See Macros below for an explanation of all available macros. Just remember to enclose the macro in double quotes if it's possible that the macro contains spaces. Example: **upload-args = --torrent "$(TorrentPathName)" --category $(Category)**
+Both **upload-command** and **upload-args** support [macros](Options#Macros). Just remember to enclose the macro in double quotes if it's possible that the macro contains spaces.  
+Example: ``upload-args = --torrent "$(TorrentPathName)" --category $(Category)``
 
 
-**Save torrent data to a dynamic directory using uTorrent:**
+### uTorrent dynamic directory
 You need to initialize **path-utorrent** below [options] or it won't work!
-
-	upload-type = dyndir
-	upload-dyndir = c:\the\windows\path\$(macro)$(macro2)\$(macro3)
+```
+upload-type = dyndir
+upload-dyndir = c:\the\windows\path\$(macro)$(macro2)\$(macro3)
+```
 
 Important: autodl-irssi assumes that the Z: drive is mapped to your / (root) directory if you're using Wine to run uTorrent.
 
@@ -127,7 +124,7 @@ Important: autodl-irssi assumes that the Z: drive is mapped to your / (root) dir
 
 **upload-dyndir** = c:\mydownloads\$(month)$(day)\$(trackershort)\$(category)** will save the data to a directory based on current month, day, tracker name, and torrent category.
 
-### Macros
+## Macros
 
 Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**  
 **$(TYear)** is the year of the torrent release, not current year.  
@@ -143,3 +140,15 @@ Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(m
 The rest are possibly self explanatory: **$(Category)**, **$(TorrentName)**, **$(Uploader)**, **$(TorrentSize)**, **$(PreTime)**, **$(TorrentUrl)**, **$(TorrentSslUrl)**, **$(Season)**, **$(Episode)**, **$(Resolution)**, **$(Source)**, **$(Encoder)**, **$(Format)**, **$(Bitrate)**, **$(Media)**, **$(Tags)**, **$(Scene)**, **$(Log)**, **$(Cue)**
 
 **$(Season2)** and **$(Episode2)** are two-digit season and episode numbers.
+
+
+## Wake on LAN (WOL)
+It's possible to wake up the computer before uploading the torrent (uTorrent webui or FTP upload). You may need to make sure your BIOS and network card have WOL enabled.
+
+wol-mac-address = 00:11:22:33:44:55
+wol-ip-address = 12.34.56.78  (or a DNS name, eg. www.blah.com)
+wol-port = 9 (defaults to 9 if you leave it blank)
+
+**wol-mac-address** is the MAC (or hardware) address of the computer's network card. Use ifconfig /all (windows) or ifconfig -a (Linux) to find out your network card's MAC address.
+
+If you have a router, then set **wol-ip-address** to your router's public IP address, and make sure the router forwards UDP packets to port **wol-port** (default 9) to your router's internal broadcast address (usually 192.168.0.255).
