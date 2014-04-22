@@ -9,7 +9,7 @@ etc...
 ```
 
 **TYPE**
-> **TYPE** can be found in the **type="XYZ"** line in the corresponding tracker file in **~/.irssi/scripts/AutodlIrssi/trackers/*.tracker**.
+> **TYPE** can be found in the **type="XYZ"** line in the corresponding tracker file in **~/.irssi/scripts/AutodlIrssi/trackers/**.
 
 **enabled**
 > Default (unset) is true. Set it to false to disable the tracker.
