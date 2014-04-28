@@ -69,8 +69,8 @@ rt-priority = high
 ```
 
 **rt-dir:** The destination directory. The torrent data will be saved here. Supports [macros](Options#Macros).  
-**rt-commands:**Execute the given rTorrent commands when loading the torrent file.  
-**rt-label:**Set a ruTorrent label.  
+**rt-commands:** Execute the given rTorrent commands when loading the torrent file.  
+**rt-label:** Set a ruTorrent label.  
 **rt-ratio-group:** Set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.  
 **rt-channel:** Set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.  
 **rt-priority:** Set the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.  
