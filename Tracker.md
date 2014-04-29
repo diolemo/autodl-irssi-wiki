@@ -24,10 +24,9 @@ etc...
 > Log in to your tracker's home page with your browser.
 * **Chrome:** Options Menu -> Privacy -> Content Settings -> All cookies and site data
 * **Firefox:** Firefox Menu -> Options -> Privacy -> Show cookies
-* **Internet Explorer:** Tools Menu -> Internet Options -> General -> Browsing History -> Settings -> View Files
 * **Safari:** Action Menu -> Preferences -> Privacy -> Details
 
-> Find your tracker site in the cookie or file list (cookie files start with "Cookie:" in INetCache). There should be a _uid_ and _pass_ value.  
+> Find your tracker site in the cookielist. There should be a _uid_ and _pass_ value.  
 Set the cookie like **uid=XXX; pass=YYY**, separating each key=value pair with a semicolon.
 
 **passkey**
