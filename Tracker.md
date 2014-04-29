@@ -22,8 +22,8 @@ etc...
 
 **cookie**
 > Log in to your tracker's home page with your browser.
-* Chrome: Options Menu -> Privacy -> Content Settings -> All cookies and site data
-* Firefox: Firefox Menu -> Options -> Privacy -> Show cookies
+* **Chrome:** Options Menu -> Privacy -> Content Settings -> All cookies and site data
+* **Firefox:** Firefox Menu -> Options -> Privacy -> Show cookies
 
 > It's usually just **uid=XXX; pass=YYY**. Separate each key=value pair with a semicolon.
 
