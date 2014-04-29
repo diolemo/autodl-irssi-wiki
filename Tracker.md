@@ -21,7 +21,11 @@ etc...
 > Set the number of seconds autodl-irssi should wait before uploading/saving the torrent. Default is 0 (no wait).
 
 **cookie**
-> Go to your tracker's home page, then type **javascript:document.innerHTML=document.cookie** in the address bar and press enter. You should now see your cookie. If all you see is PHPSESSID=XXXXX, then you'll have to manually get the cookie using FireFox: Edit -> Preferences -> Privacy tab -> Show Cookies. It's usually just **uid=XXX; pass=YYY**. Separate each key=value pair with a semicolon.
+> Log in to your tracker's home page with your browser.
+* Chrome: Options Menu -> Privacy -> Content Settings -> All cookies and site data
+* Firefox: Firefox Menu -> Options -> Privacy -> Show cookies
+
+> It's usually just **uid=XXX; pass=YYY**. Separate each key=value pair with a semicolon.
 
 **passkey**
 > First check a torrent download link if it contains it. If not you can usually find it in the generated RSS-feed URL, which you probably can generate @ yourtracker.com/getrss.php . passkeys are usually exactly 32 characters long. The passkey can also sometimes be found in your profile (click your name).
