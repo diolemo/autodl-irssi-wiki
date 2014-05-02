@@ -2,4 +2,11 @@
 
 * [[Installation]]
 * [[Configuration]]
-* [[Trackers]]
+	* [[Options Header]]
+	* [[IRC Header]]
+	* [[Server Header]]
+	* [[Channel Header]]
+	* [[Tracker Header]]
+	* [[Filter Header]]
+	* [[WebUI Header]]
+	* [[FTP Header]]
