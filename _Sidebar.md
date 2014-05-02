@@ -1,7 +1,9 @@
-**[[Home]]**
+**Installation**
+* [[Automatic Installation]]
+* [[Manual Installation]]
+* [[Post Installation]]
 
-* [[Installation]]
-* [[Configuration]]
+**Configuration**
 	* [[Options Header]]
 	* [[IRC Header]]
 	* [[Server Header]]
