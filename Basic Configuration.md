@@ -14,14 +14,3 @@ There are different option types:
 * Sizes (120MB, 4.5GB)
 
 The comma separated list type supports wildcards, where ``*`` means 0 or more characters and ``?`` means exactly one character.
-
-## Headers
-The different headers are:
-* [[Options]] - Global options for autodl-irssi
-* [[IRC]] - General IRC configuration for autodl-irssi
-* [[Server]] - Settings for tracker IRC servers
-* [[Channel]] - Settings for tracker announce channels
-* [[Tracker]] - Tracker authentication options
-* [[Filter]] - Settings to filter releases for releases
-* [[WebUI]] - uTorrent WebUI torrent action settings
-* [[FTP]] - FTP torrent action settings
