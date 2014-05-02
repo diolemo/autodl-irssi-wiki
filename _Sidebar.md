@@ -1,4 +1,5 @@
-[[Home]]  
-[[Installation]]  
-[[Configuration]]  
-[[Trackers]]  
+**[[Home]]**
+
+* [[Installation]]
+* [[Configuration]]
+* [[Trackers]]
