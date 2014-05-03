@@ -1,3 +1,3 @@
 This is a fork of [autodl-irssi](http://sourceforge.net/projects/autodl-irssi/) to continue development after the original author abandoned the project. autodl-irssi is a plugin for irssi that monitors IRC announce channels and downloads torrent files based on user-defined filters.
 
-Please choose your topic from the sidebar on the right.
+Please choose your topic from the sidebar on the right. Help can be received through the IRC channel and email address below.
