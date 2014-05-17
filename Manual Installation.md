@@ -1,3 +1,5 @@
+## Requirements
+
 autodl-irssi requires irssi compiled with Perl support.
 
 autodl-irssi has the following Perl module dependencies:
@@ -13,7 +15,9 @@ Use your package manager to install them or use the CPAN utility. If you use CPA
 
 	cpan Archive::Zip Net::SSLeay HTML::Entities XML::LibXML Digest::SHA JSON JSON::XS
 
-Installing autodl-irssi. Note: Make sure you're **not** root when you execute the following commands.
+## Installation
+
+Note: Make sure you're **not** root when you execute the following commands.
 
 	mkdir -p ~/.irssi/scripts/autorun
 	cd ~/.irssi/scripts
