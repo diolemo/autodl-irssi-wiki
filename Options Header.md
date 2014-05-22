@@ -147,20 +147,43 @@ _You need to initialize **path-utorrent** below [options] or it won't work!_
 
 _Enclose the macro in double quotes if it's possible that the macro contains spaces._
 
-Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**  
-**$(TYear)** is the year of the torrent release, not current year.  
-**$(Artist)**, **$(Show)**, **$(Movie)**, **$(Name1)** all mean the same thing.  
-**$(Album)**, **$(Name2)** both mean the same thing.  
-**$(Site)** is tracker URL.  
-**$(Tracker)** is long tracker name.  
-**$(TrackerShort)** is short tracker name.  
-**$(TorrentPathName)** is the path to the .torrent file (unix path if you're using cygwin).  
-**$(WinTorrentPathName)** is the windows path to the .torrent file.  
-**$(InfoHash)** This is the "info hash" of the torrent file.
-
-The rest are possibly self explanatory: **$(Category)**, **$(TorrentName)**, **$(Uploader)**, **$(TorrentSize)**, **$(PreTime)**, **$(TorrentUrl)**, **$(TorrentSslUrl)**, **$(Season)**, **$(Episode)**, **$(Resolution)**, **$(Source)**, **$(Encoder)**, **$(Format)**, **$(Bitrate)**, **$(Media)**, **$(Tags)**, **$(Scene)**, **$(Log)**, **$(Cue)**
-
-**$(Season2)** and **$(Episode2)** are two-digit season and episode numbers.
+> **$(year)** - Current year.  
+**$(month)** - Current month.  
+**$(day)** - Current day.  
+**$(hour)** - Current hour.  
+**$(minute)** - Current minute.  
+**$(second)** - Current second.  
+**$(milli)** - Current millisecond.  
+**$(Site)** - Tracker URL from the **torrentUrl** tracker file variable.  
+**$(Tracker)** - The long tracker name from the tracker file.  
+**$(TrackerShort)** - The short tracker name from the tracker file.  
+**$(TorrentPathName)** - The path to the .torrent file (unix path if you're using cygwin).  
+**$(WinTorrentPathName)** - The windows path to the .torrent file.  
+**$(InfoHash)** - The info hash of the torrent file.  
+**$(TYear)** - Torrent release year.  
+**$(Name1)**, **$(Artist)**, **$(Show)**, **$(Movie)** - Equivalent to the shows/artist value.  
+**$(Name2)**, **$(Album)** - Equivalent to the album value.  
+**$(Category)**  
+**$(TorrentName)**  
+**$(Uploader)**  
+**$(TorrentSize)**  
+**$(PreTime)**  
+**$(TorrentUrl)**  
+**$(TorrentSslUrl)**  
+**$(Season)**  
+**$(Season2)** - Two digit season number.  
+**$(Episode)**  
+**$(Episode2)** - Two digit episode number.  
+**$(Resolution)**  
+**$(Source)**  
+**$(Encoder)**  
+**$(Format)**  
+**$(Bitrate)**  
+**$(Media)**  
+**$(Tags)**  
+**$(Scene)**  
+**$(Log)**  
+**$(Cue)**
 
 
 ## Wake on LAN (WOL)
