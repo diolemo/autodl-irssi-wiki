@@ -69,7 +69,7 @@ rt-priority = high
 ```
 
 **rt-dir**
-> The destination directory. The torrent data will be saved here. Supports [macros](Options-Header#Macros).
+> The destination directory. The torrent data will be saved here. Supports [macros](#macros).
 **rt-commands**
 > Execute the given rTorrent commands when loading the torrent file.
 
@@ -99,7 +99,7 @@ upload-watch-dir = /home/myusername/mywatchdir
 ```
 
 **upload-watch-dir**
-> Your torrent client's watch directory. Supports [macros](Options-Header#Macros).
+> Your torrent client's watch directory. Supports [macros](#macros).
 
 ### uTorrent WebUI
 ```
@@ -124,10 +124,10 @@ upload-args = all arguments here
 ```
 
 **upload-command**
-> The program or script to execute. Supports [macros](Options-Header#Macros)
+> The program or script to execute. Supports [macros](#macros).
 
 **upload-args**
-> The arguments given to the **upload-command**. Supports [macros](Options-Header#Macros)
+> The arguments given to the **upload-command**. Supports [macros](#macros).
 
 
 ### uTorrent dynamic directory
@@ -141,7 +141,7 @@ _You need to initialize **path-utorrent** below [options] or it won't work!_
 **Important:** autodl-irssi assumes that the Z: drive is mapped to your / (root) directory if you're using Wine to run uTorrent.
 
 **upload-dyndir**
-> The directory to save the torrent. Supports [macros](Options-Header#Macros).
+> The directory to save the torrent. Supports [macros](#macros).
 
 ## Macros
 
