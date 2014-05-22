@@ -1,4 +1,4 @@
-We no longer maintain copy of the autodl-setup seedbox setup script. Here are some alternatives:
+We no longer maintain copy of the autodl-setup seedbox setup script. It's recommended to follow the [[Manual Installation]] instructions provided in this wiki. Here are some automatic alternatives:
 
 * [SeedboxCreationScript](https://github.com/SeedboxCreator/SeedboxCreationScript)
 
