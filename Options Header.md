@@ -68,14 +68,28 @@ rt-priority = high
 #rt-dont-add-name = false
 ```
 
-**rt-dir:** The destination directory. The torrent data will be saved here. Supports [macros](Options#Macros).  
-**rt-commands:** Execute the given rTorrent commands when loading the torrent file.  
-**rt-label:** Set a ruTorrent label.  
-**rt-ratio-group:** Set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.  
-**rt-channel:** Set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.  
-**rt-priority:** Set the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.  
-**rt-ignore-scheduler:** Set it to true to disable the ruTorrent scheduler.  
-**rt-dont-add-name:** Set it to true if you don't want the torrent name to be added to the path.  
+**rt-dir**
+> The destination directory. The torrent data will be saved here. Supports [macros](Options-Header#Macros).
+**rt-commands**
+> Execute the given rTorrent commands when loading the torrent file.
+
+**rt-label**
+> Set a ruTorrent label.
+
+**rt-ratio-group**
+> Set a ruTorrent ratio group. Valid names are rat_0, rat_1, ..., rat_7. You must have the ratio ruTorrent plugin installed.
+
+**rt-channel**
+> Set a ruTorrent channel. Valid names are thr_0, thr_1, ..., thr_9. You must have the throttle ruTorrent plugin installed.
+
+**rt-priority**
+> Set the torrent priority. Valid values are 0, dont-download, 1, low, 2, normal, 3, high. If you set it to dont-download (or 0), the torrent is loaded, but not started.
+
+**rt-ignore-scheduler**
+> Set it to true to disable the ruTorrent scheduler.
+
+**rt-dont-add-name**
+> Set it to true if you don't want the torrent name to be added to the path.
 
 
 ### Watch Directory
@@ -84,20 +98,23 @@ upload-type = watchdir
 upload-watch-dir = /home/myusername/mywatchdir
 ```
 
-**upload-watch-dir:** Your torrent client's watch directory. Supports [macros](Options#Macros).
+**upload-watch-dir**
+> Your torrent client's watch directory. Supports [macros](Options-Header#Macros).
 
 ### uTorrent WebUI
-Set webui user, password, etc below the **[webui]** header!
 ```
 upload-type = webui
 ```
 
+_Set webui user, password, etc below the **[webui]** header!_
+
 ### FTP
-Set FTP user, password, etc in the **[ftp]** header!
 ```
 upload-type = ftp
 upload-ftp-path = /path/to/directory
 ```
+
+_Set FTP user, password, etc in the **[ftp]** header!_
 
 ### Execute a command
 ```
@@ -105,26 +122,30 @@ upload-type = exec
 upload-command = /path/to/program
 upload-args = all arguments here
 ```
-Both **upload-command** and **upload-args** support [macros](Options#Macros). Just remember to enclose the macro in double quotes if it's possible that the macro contains spaces.  
-Example: ``upload-args = --torrent "$(TorrentPathName)" --category $(Category)``
+
+**upload-command**
+> The program or script to execute. Supports [macros](Options-Header#Macros)
+
+**upload-args**
+> The arguments given to the **upload-command**. Supports [macros](Options-Header#Macros)
 
 
 ### uTorrent dynamic directory
-You need to initialize **path-utorrent** below [options] or it won't work!
 ```
 upload-type = dyndir
 upload-dyndir = c:\the\windows\path\$(macro)$(macro2)\$(macro3)
 ```
 
-Important: autodl-irssi assumes that the Z: drive is mapped to your / (root) directory if you're using Wine to run uTorrent.
+_You need to initialize **path-utorrent** below [options] or it won't work!_
 
-**upload-dyndir** supports macros. See Macros below for an explanation of all available macros. You can use macros to create a directory based on current day and month. Some examples:
+**Important:** autodl-irssi assumes that the Z: drive is mapped to your / (root) directory if you're using Wine to run uTorrent.
 
-**upload-dyndir** = c:\mydownloads\$(year)-$(month)-$(day)** will save the torrent data below a directory containing the current year, month and day. Eg. **c:\mydownloads\2010-10-28** if 2010-10-28 happened to be the current day.
-
-**upload-dyndir** = c:\mydownloads\$(month)$(day)\$(trackershort)\$(category)** will save the data to a directory based on current month, day, tracker name, and torrent category.
+**upload-dyndir**
+> The directory to save the torrent. Supports [macros](Options-Header#Macros).
 
 ## Macros
+
+_Enclose the macro in double quotes if it's possible that the macro contains spaces._
 
 Current date and time: **$(year)**, **$(month)**, **$(day)**, **$(hour)**, **$(minute)**, **$(second)**, **$(milli)**  
 **$(TYear)** is the year of the torrent release, not current year.  
