@@ -26,7 +26,7 @@ etc...
 * **Firefox:** Firefox Menu -> Options -> Privacy -> Show cookies
 * **Safari:** Action Menu -> Preferences -> Privacy -> Details
 
-> Find your tracker site in the cookielist. There should be a _uid_ and _pass_ value.  
+> Find your tracker site in the cookielist. The values needed may vary between trackers. Often these are _uid_ and _pass_.  
 Set the cookie like **uid=XXX; pass=YYY**, separating each key=value pair with a semicolon.
 
 **passkey**
