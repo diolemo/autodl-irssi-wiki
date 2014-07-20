@@ -45,7 +45,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **shows**
 > **Type:** Comma separated list  
 **Example:** shows = The Simpsons, American Dad  
-**Description:** This is for TV-shows, movies and artists/groups (what.cd/waffles only). autodl-irssi will automatically extract the TV-show/movie name from a scene release name. Example, The.Simpsons.S35E24.720p.HDTV-BLAH will match a **shows** option set to **the simpsons**. You don't need wildcards at all, though it's possible to use wildcards. It's recommended to use **shows** instead of **match-releases** if all you want is for the filter to match TV-shows or movies. what.cd and waffles: this will match against the artist/group.
+**Description:** This is for TV-shows, movies and artists/groups. autodl-irssi will automatically extract the TV-show/movie name from a scene release name. Example, The.Simpsons.S35E24.720p.HDTV-BLAH will match a **shows** option set to **the simpsons**. You don't need wildcards at all, though it's possible to use wildcards. It's recommended to use **shows** instead of **match-releases** if all you want is for the filter to match TV-shows or movies. what.cd and waffles: this will match against the artist/group.
 
 **seasons**
 > **Type:** Number list  
@@ -80,54 +80,54 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **albums**
 > **Type:** Comma separated list  
 **Example:** albums = Some album, Some other album, yet another one  
-**Description:** what.cd/waffles only.
+**Description:** 
 
 **formats**
 > **Type:** Comma separated list  
 **Example:** formats = MP3, FLAC  
-**Description:** what.cd/waffles only. List the formats you want. Valid formats are: **MP3**, **FLAC**, **Ogg**, **AAC**, **AC3**, **DTS**.
+**Description:** List the formats you want. Valid formats are: **MP3**, **FLAC**, **Ogg**, **AAC**, **AC3**, **DTS**.
 
 **bitrates**
 > **Type:** Comma separated list  
 **Example:** bitrates = 192, V0 (vbr), lossless  
-**Description:** what.cd/waffles only. List the bitrates you want. Some example values: **192**, **320**, **APS (VBR)**, **V2 (VBR)**, **V1 (VBR)**, **APX (VBR)**, **V0 (VBR)**, **q8.x (VBR)**, **Lossless**, **24bit Lossless**, **Other**.
+**Description:** List the bitrates you want. Some example values: **192**, **320**, **APS (VBR)**, **V2 (VBR)**, **V1 (VBR)**, **APX (VBR)**, **V0 (VBR)**, **q8.x (VBR)**, **Lossless**, **24bit Lossless**, **Other**.
 
 **media**
 > **Type:** Comma separated list  
 **Example:** media = CD, WEB  
-**Description:** what.cd/waffles only. List the media you want. Valid media are: **CD**, **DVD**, **Vinyl**, **Soundboard**, **SACD**, **DAT**, **Cassette**, **WEB**, **Other**.
+**Description:** List the media you want. Valid media are: **CD**, **DVD**, **Vinyl**, **Soundboard**, **SACD**, **DAT**, **Cassette**, **WEB**, **Other**.
 
 **tags**
 > **Type:** Comma separated list  
 **Example:** tags = hip hop, rock  
-**Description:** what.cd/waffles only. Unless at least one of your tags matches the release's tags, it's not downloaded. See also **except-tags** and **tags-any**.
+**Description:** Unless at least one of your tags matches the release's tags, it's not downloaded. See also **except-tags** and **tags-any**.
 
 **except-tags**
 > **Type:** Comma separated list  
 **Example:** except-tags = hip hop, rock  
-**Description:** what.cd/waffles only. Same as **tags** except if it matches any/all of these, it's not downloaded. See also **tags** and **except-tags-any**.
+**Description:** Same as **tags** except if it matches any/all of these, it's not downloaded. See also **tags** and **except-tags-any**.
 
 **tags-any**
 > **Type:** Boolean  
 **Default:** true  
 **Example:** tags-any = false  
-**Description:** what.cd/waffles only. Decides how to match the **tags** option, ie., if any or all of the tags must match.
+**Description:** Decides how to match the **tags** option, ie., if any or all of the tags must match.
 
 **except-tags-any**
 > **Type:** Boolean  
 **Default:** true  
 **Example:** except-tags-any = true  
-**Description:** what.cd/waffles only. Decides how to match the **except-tags** option, ie., if any or all of the tags must match.
+**Description:** Decides how to match the **except-tags** option, ie., if any or all of the tags must match.
 
 **scene**
 > **Type:** Boolean  
 **Example:** scene = true  
-**Description:** what.cd/waffles, and a few others. Some sites mark a release as scene or non-scene. Set it to true if you want only scene releases, false if you only want non-scene releases, or don't use this option if you don't care.
+**Description:** Some sites mark a release as scene or non-scene. Set it to true if you want only scene releases, false if you only want non-scene releases, or don't use this option if you don't care.
 
 **log**
 > **Type:** Boolean  
 **Example:** log = true  
-**Description:** what.cd/waffles. Set it to true if you only want releases with a log file, false if you don't want releases with log files, or don't use this option if you don't care.
+**Description:** Set it to true if you only want releases with a log file, false if you don't want releases with log files, or don't use this option if you don't care.
 
 **log-scores**
 > **Type:** Number list  
