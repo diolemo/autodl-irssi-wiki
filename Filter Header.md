@@ -124,7 +124,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Example:** scene = true  
 **Description:** Some sites mark a release as scene or non-scene. Set it to true if you want only scene releases, false if you only want non-scene releases, or don't use this option if you don't care.
 
-**origin**
+**origins**
 > **Type:** Comma separated list
 **Example:** origins = P2P, Internal
 **Description:** Some trackers set the origin of a release in a more fine-grained manner than scene/non-scene.
