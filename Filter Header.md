@@ -124,6 +124,11 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **Example:** scene = true  
 **Description:** Some sites mark a release as scene or non-scene. Set it to true if you want only scene releases, false if you only want non-scene releases, or don't use this option if you don't care.
 
+**origin**
+> **Type:** Comma separated list
+**Example:** origins = P2P, Internal
+**Description:** Some trackers set the origin of a release in a more fine-grained manner than scene/non-scene.
+
 **log**
 > **Type:** Boolean  
 **Example:** log = true  
@@ -143,7 +148,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **freeleech**
 > **Type:** Boolean  
 **Example:** freeleech = true  
-**Description:** Only supported on a few [[trackers]]. Set to true if you only want to download freeleech releases. Set to false if you only want non-scene releases. Don't set if you don't care.
+**Description:** Only supported on a few trackers. Set to true if you only want to download freeleech releases. Set to false if you only want non-scene releases. Don't set if you don't care.
 
 **freeleech-percents**
 > **Type:** Number list  
