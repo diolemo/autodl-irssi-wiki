@@ -6,12 +6,16 @@ These options change the behavior of autodl-irssi. Place these options below the
 **Example:** rt-address = 127.0.0.1:5000  
 **Description:** If you use the 'rtorrent' action (**upload-method**), then you must initialize this to your rtorrent's SCGI address. It can be ip:port (eg. 127.0.0.1:5000) or /path/to/socket. **NOTE:** This option can only be set in autodl2.cfg, **not** autodl.cfg.
 
-
 **update-check**
 > **Type:** string  
 **Default:** ask  
 **Example:** update-check = auto  
 **Description:** autodl-irssi can auto update itself. Valid values are **ask**, **auto**, and **disabled**. **ask** will print a message when there's a new version. **auto** will automatically update it when there's a new version. **disabled** won't do a thing when there's a new update.
+
+**output-level**
+> **Type:** Integer greater than or equal to 0.
+**Default:** 3
+**Description:** Set the verbosity of autodl. Setting to 5 will output captured variables from announces.
 
 **max-saved-releases**
 > **Type:** Integer greater than or equal to 0.  
