@@ -148,7 +148,7 @@ Create one [filter] header per filter. You can optionally name the filter like *
 **freeleech**
 > **Type:** Boolean  
 **Example:** freeleech = true  
-**Description:** Only supported on a few trackers. Set to true if you only want to download freeleech releases. Set to false if you only want non-scene releases. Don't set if you don't care.
+**Description:** Only supported on a few trackers. Set to true if you only want to download freeleech releases. Set to false if you only want non-freeleech releases. Don't set if you don't care.
 
 **freeleech-percents**
 > **Type:** Number list  
