@@ -10,7 +10,8 @@ If you know how to create a new tracker file or edit an existing tracker file to
 
 Preferably, this information should be provided using a pastebin site.
 
-### I'm getting this error: "Error downloading files. Make sure autodl-irssi is started and configured properly (eg. password, port number): Error getting files listing: Error: Could not connect: (111) Connection refused". How do I fix this?
+### How do I fix this error: ``Error downloading files. Make sure autodl-irssi is started and configured properly (eg. password, port number): Error getting files listing: Error: Could not connect: (111) Connection refused``
+
 This is an error that occurs in the ruTorrent plugin when it can't communicate with autodl-irssi. This could be for a number of reasons:
 
 * irssi may not be running
