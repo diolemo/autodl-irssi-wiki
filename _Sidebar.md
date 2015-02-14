@@ -1,3 +1,6 @@
+**General**
+* [[FAQ]]
+
 **Installation**
 * [[Automatic Installation]]
 * [[Manual Installation]]
